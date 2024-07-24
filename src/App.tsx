@@ -1,13 +1,13 @@
-import Alert from "./components/Alert";
 import "bootstrap/dist/css/bootstrap.css";
+import Button from "./components/Buttons";
 
 function App() {
   return (
     <div>
-      <Alert>
-        <h1>this is h1 tag</h1>
-        <h2>this is h2 tag</h2>
-      </Alert>
+      <Button color="secondary" onClick={() => console.log("clicked")}>
+        My button
+      </Button>
+      <Button onClick={() => console.log("new btn")}>new button</Button>
     </div>
   );
 }
